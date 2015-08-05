@@ -42,7 +42,7 @@ $(document).ready(function () {
     // and append the groups to the DOM
     $('body').on('click', '.randomButton', function(){
 
-        shuffle(peopleArray);
+       peopleArray = shuffle(peopleArray);
 
         for (var i = 1; i <= teamNum; i++) {
             $("#cohort").append("<div class='group" + i + "'></div>");
