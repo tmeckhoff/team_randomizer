@@ -56,7 +56,7 @@ $(document).ready(function () {
 
             $(".group" + num).append("<p>" + peopleArray[i] + "</p>");
             var peeps = $(".group" + num).children().last();
-            peeps.hide().delay(300 * i).fadeIn();
+            peeps.hide().delay(300 * i).fadeIn(200);
             num++;
 
             if(num > teamNum){
